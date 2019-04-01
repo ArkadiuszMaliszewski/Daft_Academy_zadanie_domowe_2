@@ -1,0 +1,106 @@
+.main-section {
+
+    font-family: $font-drinks-manu;
+    background-color: $background;
+    margin:  80px;
+
+    .logo{
+        font-family: $font-logo;
+        color: $primary;
+        font-size: 28px;
+        border: 3px solid $primary;
+        padding: 17px 40px;
+        position: relative;
+        left: 60px;
+        top: -15px;
+    }
+
+    .container{
+        padding-bottom: 80px;
+    }
+
+    .menu {
+        width: 1200px;
+        margin: 0 auto;
+        height: 152px;
+
+        .menu-drinks {
+            padding: 80px 26px 20px 107px;
+
+            .menu-drinks-item{
+                font-family: $font-nav;
+                font-size: 16px;
+                font-weight: 400;
+                display: inline-block;
+                margin: 10px 25px 10px 0;
+                color: $nav-color;
+                cursor: pointer;
+
+                &:hover{
+                    color: $primary;
+
+                    &:after{
+                        content: "";
+                        display: block;
+                        width: 70%;
+                        padding-top: 7px;
+                        border-bottom: 1.5px solid $primary;
+                    }
+                }
+
+                
+            }
+            
+        }
+    }
+
+    .gallery {
+        margin: 0 160px;
+        height: 820px;
+        overflow: auto;
+        @include scroll-bar;
+        
+
+        .gallery-images{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 1200px;
+            margin: 0 auto;         
+
+            .gallery-images-item{
+                margin: 0 10px 24px 10px;
+                height: 300px;
+                width: 300px;
+                text-align: center;
+
+                .gallery-drinks_name{
+                    font-size: 38px;
+                    font-weight: 400;
+                    color: white;
+                    position: relative;
+                    bottom: 175px;
+                    left: 0;
+                }
+
+                &:nth-of-type(4){
+
+                .gallery-drinks_name{
+                    bottom: 233px;
+                    line-height: 79px;
+                }
+                    
+                }
+                    
+                img{
+                    height: 250px;
+                    width: 250px;
+                        
+                    &:hover{
+                        border: 7px solid $gallery-color_hover;
+                    }
+                }
+            }
+        }    
+     } 
+}

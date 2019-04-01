@@ -1,0 +1,17 @@
+@mixin scroll-bar() {
+    &::-webkit-scrollbar {
+      border-radius: 5px;
+      height: 20px;
+      width: 4px;
+      
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: lighten( $nav-color, 15%);
+      border-radius: 5px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+    }
+  }
