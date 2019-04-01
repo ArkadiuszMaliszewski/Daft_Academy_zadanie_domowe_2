@@ -20,7 +20,7 @@
     }
 
     .menu {
-        width: 1200px;
+        width: 960px;
         margin: 0 auto;
         height: 152px;
 
@@ -29,10 +29,10 @@
 
             .menu-drinks-item{
                 font-family: $font-nav;
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 400;
                 display: inline-block;
-                margin: 10px 25px 10px 0;
+                margin: 0px 25px 10px 0;
                 color: $nav-color;
                 cursor: pointer;
 
@@ -42,9 +42,9 @@
                     &:after{
                         content: "";
                         display: block;
-                        width: 70%;
-                        padding-top: 7px;
-                        border-bottom: 1.5px solid $primary;
+                        width: 80%;
+                        padding-top: 6px;
+                        border-bottom: 2px solid $primary;
                     }
                 }
 
@@ -63,15 +63,14 @@
 
         .gallery-images{
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex-wrap: wrap;
-            width: 1200px;
+            width: auto;
             margin: 0 auto;         
 
             .gallery-images-item{
-                margin: 0 10px 24px 10px;
-                height: 300px;
-                width: 300px;
+                height: 250px;
+                width: 250px;
                 text-align: center;
 
                 .gallery-drinks_name{
@@ -93,11 +92,12 @@
                 }
                     
                 img{
-                    height: 250px;
-                    width: 250px;
+                    height: 200px;
+                    width: 200px;
                         
                     &:hover{
                         border: 7px solid $gallery-color_hover;
+                        border-radius: 3px;
                     }
                 }
             }
